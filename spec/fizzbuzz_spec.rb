@@ -15,4 +15,9 @@ describe 'FizzBuzz' do
     result = FizzBuzz.says 10
     expect('Buzz').to eq(result)
   end
+
+  it 'return FizzBuzz when the number is divisible by 3 and 5' do
+    result = FizzBuzz.says 30
+    expect('FizzBuzz').to eq(result)
+  end
 end
