@@ -13,6 +13,11 @@ describe 'FizzBuzz' do
     result = fizzBuzz 5
     expect('Buzz').to eq(result)
   end
+
+  it 'return Fizz when the number is disivible by 3' do
+    result = fizzBuzz 9
+    expect('Fizz').to eq(result)
+  end
 end
 
 FIZZ_NUMBER = 3
