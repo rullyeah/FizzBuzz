@@ -12,7 +12,7 @@ class FizzBuzz
     end
 
     def checkFizz n
-      n % FIZZ_NUMBER == 0
+      n % FIZZ_NUMBER == 0 or  n.digits.member? FIZZ_NUMBER
     end
 
     def checkBuzz n
