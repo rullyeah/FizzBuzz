@@ -25,4 +25,9 @@ describe 'FizzBuzz' do
     result = FizzBuzz.says 13
     expect(result).to eq('Fizz')
   end
+
+  it 'return Buzz when the number contains 5' do
+    result = FizzBuzz.says 56
+    expect(result).to eq('Buzz')
+  end
 end
