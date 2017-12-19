@@ -9,6 +9,11 @@ describe 'FizzBuzz' do
     expect(1).to eq(result)
   end
 
+  it 'return Buzz when the number is 5' do
+    result = fizzBuzz 5
+    expect('Buzz').to eq(result)
+  end
+
 end
 
 def fizzBuzz n
