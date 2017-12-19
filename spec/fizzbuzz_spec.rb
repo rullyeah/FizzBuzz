@@ -5,12 +5,13 @@ describe 'FizzBuzz' do
   end
 
   it 'return the same number by default' do
-  	result = fizzBuzz 1
-  	expect(1).to eq(result)
+    result = fizzBuzz 1
+    expect(1).to eq(result)
   end
 
 end
 
 def fizzBuzz n
-  'Fizz'
+  return 'Fizz' if n == 3
+  n
 end
