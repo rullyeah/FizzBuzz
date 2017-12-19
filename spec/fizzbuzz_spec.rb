@@ -18,5 +18,6 @@ end
 
 def fizzBuzz n
   return 'Fizz' if n == 3
+  return 'Buzz' if n == 5
   n
 end
