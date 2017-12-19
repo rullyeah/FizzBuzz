@@ -16,7 +16,7 @@ class FizzBuzz
     end
 
     def checkBuzz? n
-      n % BUZZ_NUMBER == 0
+      is_divisible? n, BUZZ_NUMBER or contains? n, BUZZ_NUMBER
     end
 
     def checkFizzBuzz? n
