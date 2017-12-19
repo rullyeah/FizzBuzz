@@ -3,6 +3,12 @@ describe 'FizzBuzz' do
     result = fizzBuzz 3
     expect('Fizz').to eq(result)
   end
+
+  it 'return the same number by default' do
+  	result = fizzBuzz 1
+  	expect(1).to eq(result)
+  end
+
 end
 
 def fizzBuzz n
