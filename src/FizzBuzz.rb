@@ -5,6 +5,7 @@ class FizzBuzz
     BUZZ_NUMBER = 5
 
     def says n
+      return 'FizzBuzz' if checkFizzBuzz n
       return 'Fizz' if checkFizz n
       return 'Buzz' if checkBuzz n
       n
@@ -17,6 +18,9 @@ class FizzBuzz
     def checkBuzz n
       n % BUZZ_NUMBER == 0
     end
-  
+
+    def checkFizzBuzz n
+      checkFizz n and checkBuzz n
+    end
   end
 end
