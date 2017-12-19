@@ -24,7 +24,7 @@ FIZZ_NUMBER = 3
 BUZZ_NUMBER = 5
 
 def fizzBuzz n
-  return 'Fizz' if n == FIZZ_NUMBER
+  return 'Fizz' if n % FIZZ_NUMBER == 0
   return 'Buzz' if n == BUZZ_NUMBER
   n
 end
