@@ -30,10 +30,14 @@ BUZZ_NUMBER = 5
 
 def fizzBuzz n
   return 'Fizz' if checkFizz n
-  return 'Buzz' if n == BUZZ_NUMBER
+  return 'Buzz' if checkBuzz n
   n
 end
 
 def checkFizz n
   n % FIZZ_NUMBER == 0
+end
+
+def checkBuzz n
+  n % BUZZ_NUMBER == 0
 end
